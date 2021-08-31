@@ -1,0 +1,78 @@
+body{
+    color: #404040;
+    background-color: #F0F0F0;
+    font-family: Georgia;
+}
+
+h1, h2 {
+    color:#A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    font-family: Lucida;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 18pt;
+}
+
+em {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+p#comment {
+    background-color: yellow;
+    margin-left: 40px;
+}
+
+.definedterm {
+    font-weight: bolder;
+    font-size: large;
+}
+
+
+.footer {
+    background-color: #B2BABB;
+
+}
+
+.footer .container p {
+    text-align:right;
+}
+
+p#desc{
+    color: #404040;
+    font-size: 11px;
+}
+
+p {
+    color: #404040;
+    font-size: 11px;
+}
+
+ul li {
+    font-size: 11px;
+}
+
+ol li {
+    font-size: 11px;
+}
+
+.definedterm {
+    font-size: 11px;
+}
+
+a {
+    color: #A4A400;
+}
+
+.deleted{
+    text-decoration: line-through;
+}
