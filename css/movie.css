@@ -115,15 +115,21 @@ dl dt {
     border-radius: 20px;
 }
 
+.container1 div p img{
+    float: left;
+}
+.container1 div p {
+    margin: 5px;
+    padding: 5px;
+}
+
+
 .container1 div{
     font-size: 8px;
     font-size: bold;
-
-    
-
     border-radius: 10px;
     padding: 8px;
-    margin: 8px;
+    /* margin: 8px; */
 }
 
 .container1 div p#a1{
