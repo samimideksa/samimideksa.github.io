@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grades</title>
+    <link rel="stylesheet" href="css/form.css">
+    <title>>Retrieve Grade</title>
 </head>
+
 <body>
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
-    </form>
+    <div class="form">
+        <h1>Retrieve your grade</h1>
+        <form action="http://mumstudents.org/params.php" class="submission-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" maxlength="30"><br><br>
+            <label for="Id">Student Id:</label><br>
+            <input type="text" id="Id" name="Id"> <br><br>
+
+            <label for="Assignment">Select Assignment</label><br>
+            <select name="Assignment" id="Assignment" multiple>
+                <option value="Lab0">Lab0</option>
+                <option value="Lab1">Lab1</option>
+                <option value="Lab2">Lab2</option>
+                <option value="Lab3">Lab3</option>
+                <option value="Lab4">Lab4</option>
+                <option value="Lab5">Lab5</option>
+                <option value="Lab6">Lab6</option>
+                <option value="Lab7">Lab7</option>
+                <option value="Lab8">Lab8</option>
+                <option value="Lab9">Lab9</option>
+                <option value="Lab10">Lab10</option>
+            </select>
+
+            <br><br>
+
+            
+            <p>Please select what entry you are in:</p>
+          <input type="radio" id="February" name="entry" value="February">
+          <label for="February">February</label><br>
+          <input type="radio" id="May" name="entry" value="May">
+          <label for="May">May</label><br>
+          <input type="radio" id="August" name="entry" value="August">
+          <label for="August">August</label>
+            <br><br>
+            <p>Do you honour the pledge</p>
+            <label for="checkbox1"><input type="checkbox" id="checkbox1" name="checkbox1" value="I am not lying">I am not lying</label><br>
+            <label for="checkbox2"><input type="checkbox" id="checkbox2" name="checkbox2" value="I really want to see my grade">I really want to see my grade</label>
+            <br><br>
+            <input type="reset" value="reset">
+            <input type="submit" value="submit"> <br><br>
+        </form>
+    </div>
+
 </body>
+
 </html>
