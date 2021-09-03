@@ -96,9 +96,15 @@ footer {
     left: 0;
     right: 0;
     background: antiquewhite;
-    height: auto;
+    height: 80px;
     width: 100vw;
     font-family:sans-serif;
     padding-top: 40px;
     color: black;
+}
+
+.links{
+    margin-top: 100px;
+    margin-left: 800px;
+    bottom: 0;
 }
