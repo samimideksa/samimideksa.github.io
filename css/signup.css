@@ -4,6 +4,7 @@
     list-style: none;
     text-decoration: none;
 }
+
 .header {
     text-align: center;
     background-color:antiquewhite;
@@ -41,7 +42,6 @@
     width: 450px;
     height: 290px;
     margin-left: 300px;
-    /* background-color:silver; */
 }
 
 #red{
@@ -52,10 +52,8 @@
     padding-left: 5px;
 }
 
+
 .submission-form input{
-    /* display: block;
-    padding: 1.5rem 0; */
-    /* text-transform: uppercase; */
     border-radius: 5px;
     border: 2px solid black;
     padding: .25rem;
@@ -86,9 +84,6 @@
 #sendBtn:hover{
     background-color: aqua;
 }
-
-
-
 
 footer {
     position: absolute;
