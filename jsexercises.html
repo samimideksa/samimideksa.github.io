@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/decoratemytext.css">
+    <title></title>
+</head>
+<body>
+    <h1>Javascript exercises </h1>
+    <h2>1.</h2>
+    <ul><li>
+        In the first case the function is called after waiting for 2 seconds. 
+    </li>
+<li>
+    In the second case the function is immediately called rather than waiting for 2 seconds.
+</li></ul>
+<h2>2.</h2>
+    <p>Two alerts with value 6 will appear consecutively.</p>
+    <h2>3.</h2>
+    <pre>
+        <code>
+            function booyah1(){
+                alert('BOOYAH!');
+            }
+            
+            function booyah2(){
+                window.clearTimeout(booyah2);
+                window.setTimeout(booyah1, 2000);
+            
+            }
+        </code>
+        
+        
+    </pre>
+<h2>4.</h2>
+<p>
+    Unobtrusive JavaScript is the way of writing JavaScript language in which we properly separate Document Content and Script Content thus allowing us to make a clear distinction between them. This approach is useful in so many ways as it makes our code less error prone, easy to update and to debug.
+The basic concept of unobtrusive programming is that JavaScript should be used as an enhancement to our web page instead of an absolute requirement. If you do not need JavaScript, then don't use it; your static content will display just fine with plain old HTML and CSS. So many developers make the mistake of importing code libraries before even figuring out if they will be even required. jQuery for example has been so much mis-used when all our basic needs can be easily fulfilled by CSS and pure JavaScript code.
+If your application is dynamic and needs to call server code asynchronously, update HTML content and do all sorts of event binding, then by all means, do use JavaScript, and libraries like jQuery, etc. but try to code them in a separate layer systematically so that the HTML content stays clean and semantically separated.
+Following are the areas in web application development which have a clear positive impact when we write JavaScript unobtrusively:
+
+</p>
+<h3>Code Separation</h3>
+<p>JavaScript code is not embedded into HTML, thus making it easy to update or upgrade the code.</p>
+<h3>Stability</h3>
+<p>Unobtrusive JavaScript generates less error messages. The web page will always display all the content from the static markup and CSS even if the script fails to run.</p>
+<h3>Graceful Degradation and Progressive Enhancement</h3>
+<p>If any feature is not supported by the browser, then the code should silently turn off that feature instead of throwing an error message. Similarly, if more advanced versions of a feature are available, the code should use the upgraded features to give the user an experience as per the browser advancement.</p>
+<h3>Cleaner Global Scope</h3>
+<p>The global scope or the window scope will stay clean of unnecessary or unwanted objects, properties, functions and variables. The unobtrusive way is to have a single point of entry into the application's data using namespaces.</p>
+
+</body>
+</html>
