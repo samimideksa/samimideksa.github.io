@@ -1,32 +1,36 @@
 
-var  accountInfoList = [];
+var accountInfoList = [];
 
 const makeCounter = function(){
     let name = document.getElementById('mytext').value;
+    console.log(name);
     let balance = document.getElementById('deposit').value;
+    console.log(balance);
 
-    function createAccount(AccountName, AccountBalance){
-        this.AccountName = AccountName;
-        this.AccountBalance = AccountBalance;
-    }
-
-    var account = createAccount(name, balance);
+    var account = new Account(name, balance);
 
     accountInfoList.push(account);
 
+    console.log(typeof accountInfoList);
+    console.log(accountInfoList.length);
+
 }
 
-// document.getElementById('createAccount').onclick = createAccount;
+
+class Account{
+    constructor(name, balance){
+        this.name = name;
+        this.balance = balance;
+    }
+}
 
 function createAccount(){
     makeCounter();
-    // console.log(account1);
-    // const account2 = makeCounter(a)
-    // accountInfoList.push(account1);
-    console.log(typeof accountInfoList)
+    var text = "";
     for(var i = 0; i < accountInfoList.length; i++){
-        console.log("Account Name: "  + accountInfoList[i].AccountName + "Balance: " + accountInfoList[i].balance);
+        text += "Account name: " + accountInfoList[i].name + "  " + "Balance: " + accountInfoList[i].balance + "\n";
     }
-    // document.getElementById('mytextarea').value = accountInfoList[0].name;
+
+    document.getElementById('mytextarea').value = text;
 
 }
