@@ -1,0 +1,260 @@
+body, button {
+	font-family: cursive;
+	font-size: 14pt;
+	text-align: center;
+}
+
+/* The area that holds the 15 puzzle pieces. */
+#puzzlearea {
+	font-size: 40pt;
+	width: 400px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+    /* background-image: url("../Images/puzzle.jpg"); */
+}
+
+/* This class should be applied to each of the 15 puzzle pieces. */
+.puzzlepiece {
+	background-image: url("../Images/puzzle.jpg");
+	border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	position: absolute;
+}
+
+/* #tile1{background-position: 0 0;}
+#tile2{background-position: -200px -0px;}
+#tile3{background-position: -400px -0px;}
+#tile4{background-position: -0px -200px;} */
+
+.tile{
+    background-image: url("../Images/puzzle.jpg");
+	border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	position: absolute;
+}
+
+#one{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 0px 0px;
+}
+
+#two{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 300px 0px;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
+#three{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 200px 0px;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+
+#four{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 100px 0px;
+    margin-left: 300px;
+    margin-top: -100px;
+}
+
+#five{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 0px 100px;
+
+}
+
+#six{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 300px -100px;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
+#seven{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 200px -100px;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+
+#eight{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 100px -100px;
+    margin-left: 300px;
+    margin-top: -100px;
+}
+
+#nine{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 0px 200px;
+}
+
+#ten{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 300px -200px;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
+#eleven{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 200px -200px;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+
+#twelve{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 100px -200px;
+    margin-left: 300px;
+    margin-top: -100px;
+}
+#thirteen{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 0px 300px;
+}
+
+#fourteen{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 300px -300px;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
+#fifteen{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 200px -300px;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+
+#sixteen{
+    background-image: url("../Images/puzzle.jpg");
+    border: 5px solid black;
+	width: 90px;
+	height: 90px;
+	/* position: absolute; */
+    background-position: 100px -300px;
+    margin-left: 300px;
+    margin-top: -100px;
+}
+
+.empty{
+    background-image: none;
+    border: none;
+}
+/* This class should be applied to a puzzle piece that can be moved. */
+.movablepiece:hover {
+	border-color: red;
+	color: red;
+}
+
+/* grading styles -- for TAs only; not required by students */
+#gradingarea {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	z-index: 999999;
+}
+
+.valid {
+	background-color: #bfb;
+}
+
+.invalid {
+	background-color: #f88;
+}
+
+/* 
+init = function() {
+    var puzzleArea = document.getElementById('puzzlearea');
+    var divs = puzzleArea.getElementsByTagName("div");
+      
+    // initialize each piece
+    for (var i=0; i< divs.length; i++) {
+        var div = divs[i];
+        
+        // calculate x and y for this piece
+        var x = ((i % 4) * 100) ;
+        var y = (Math.floor(i / 4) * 100) ;
+
+        // set basic style and background
+        div.className = "puzzlepiece";
+        div.style.left = x + 'px';
+        div.style.top = y + 'px';
+        div.style.backgroundImage = 'url("background.jpg")';
+        div.style.backgroundPosition = -x + 'px ' + (-y) + 'px';
+        
+        // store x and y for later
+        div.x = x;
+        div.y = y; 
+    }        
+};
+
+ */
